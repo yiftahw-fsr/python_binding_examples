@@ -15,13 +15,6 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(pybind11)
 
-FetchContent_Declare(
-    glaze
-    GIT_REPOSITORY https://github.com/stephenberry/glaze.git
-    GIT_TAG        v7.0.2
-)
-FetchContent_MakeAvailable(glaze)
-
 # Create a pybind11 module from the generated C++ file
 pybind11_add_module(pose_module
     ${CMAKE_SOURCE_DIR}/pose_module.cpp
