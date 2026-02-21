@@ -6,7 +6,7 @@
                 "${workspaceFolder}/pybind11/build/compile_commands.json"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/gcc",
+            "compilerPath": "${workspaceFolder}/.pixi/envs/default/bin/g++",
             "cStandard": "c17",
             "cppStandard": "gnu++23",
             "intelliSenseMode": "linux-gcc-x64"

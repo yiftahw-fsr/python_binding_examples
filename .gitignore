@@ -5,3 +5,6 @@ cmake-build-*/
 __pycache__
 .venv
 *_bindings.hpp
+# pixi environments
+.pixi/*
+!.pixi/config.toml
