@@ -32,7 +32,9 @@ def test_pose_buffer_protocol():
         os.unlink(SOCKET_PATH)
 
     p = Pose()
-    p.set_values(1.0, 2.0, 3.0)
+    p.x = 1.0
+    p.y = 2.0
+    p.z = 3.0
 
     # Bind and listen BEFORE starting the reader thread to avoid race condition
     with socket.socket(socket.AF_UNIX, socket.SOCK_STREAM) as s:
